@@ -1,0 +1,173 @@
+body{
+	background-color: #000;
+}
+p{
+	text-align: center;
+    color: #FFAA00;
+}
+
+#aj{
+	width: 85px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Horario{
+    position:relative;
+    max-width: 1000px;
+    margin:auto;
+    height:550px;
+    background:transparent;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:sans-serif;
+}
+
+.cardB{
+    position:absolute;
+    margin-top:10px;
+    width:400px;
+    height:500px;
+    background:transparent;
+   
+}
+.cardB .imgB{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transform-origin:bottom;
+    background:transparent;
+    transition:0.5s;
+    transform: translateY(0) rotateX(0deg);
+    box-shadow:0 10px 100px rgba(255,255,255,0.5);
+}
+.cardB:hover .imgB{
+    transform: translateY(-100%) rotateX(90deg);
+}
+.cardB .imgB #h4t{
+    color:#FFAA00;
+    font-weight:800;
+    text-align:center;
+}
+.cardB .schedule{
+ 
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#FFAA00;
+    transform-origin:top;
+    transition:0.5s;
+    box-sizing:border-box;
+    padding:20px;
+    text-align: center;
+    transform: translateY(100%) rotateX(-90deg);
+}
+.cardB:hover .schedule{
+    transform: translateY(0) rotateX(0deg);
+}
+.cardB .schedule .botoes{
+    position: absolute;
+    top:50%;
+    left:0;
+    width:100%;
+    transform:translateY(-50%);
+}
+
+.cardB .schedule .botoes #h3t{ 
+    margin-bottom:15px;
+    color:#000;
+    text-transform:uppercase;
+}
+
+.cardB .schedule .botoes #h3t #sban {
+    font-size:20px;
+    color:#262626;
+    text-transform:initial;
+}
+
+.cardB .schedule .botoes #ulh{
+    margin:0;
+    padding:0;
+    display:flex;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.cardB .schedule .botoes #ulh li{
+    list-style:none;
+    line-height:50%;
+    display:relative;
+    width:100%;
+   	padding:5px;
+    margin:5px;
+}
+
+.Boton{
+    width:60px;
+    height: 30px;
+    background:#FFAA00;
+    border:2px solid #000;
+    color:#000;
+    margin:10px;
+    transition:0.5s;
+    cursor: pointer;
+}
+.Boton:hover{
+    background:#000;
+    color:#FFAA00;
+    font-weight:600;
+}
+#seta{
+	width: 85px;
+	height: 85px;
+	cursor: pointer;
+	margin-top: 10px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	background-color: #FFAA00;
+	padding: 6px;
+	border-radius: 50%;
+}
+.stelf{
+	visibility: hidden;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+button{
+	color: black;
+	background:#FFAA00;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:400;
+    border: none;
+    text-transform:uppercase;
+    margin-left: 5px;
+}
+.btEnviar{
+    background:#FFAA00;
+    padding:8px 10px;
+    margin-top: -10px;
+    width:143px;
+    cursor:pointer;
+    color:#fff;
+    font-size:18px;
+    font-weight:400;
+    border:none;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    transition:0.3s;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
